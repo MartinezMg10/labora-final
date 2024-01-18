@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"net/http"
 	"time"
@@ -14,7 +15,6 @@ import (
 )
 
 func main() {
-
 	router := mux.NewRouter()
 	_ = godotenv.Load()
 	l := boostrap.InitLogger()
@@ -56,6 +56,7 @@ func main() {
 		WriteTimeout: 5 * time.Second,
 	}
 
+	fmt.Println("Starting")
 	log.Fatal(srv.ListenAndServe())
 
 }
