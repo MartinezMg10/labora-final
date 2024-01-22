@@ -49,6 +49,12 @@ func main() {
 
 	router.HandleFunc("/enrollments", enrollEnd.Create).Methods("POST")
 
+	/* 	corsHandler := handlers.CORS(
+		handlers.AllowedOrigins([]string{"*"}), // Puedes ajustar los orígenes permitidos según tus necesidades
+		handlers.AllowedMethods([]string{"GET", "POST", "PATCH", "DELETE"}),
+		handlers.AllowedHeaders([]string{"Content-Type"}),
+	) */
+
 	srv := &http.Server{
 		Handler:      router,
 		Addr:         "0.0.0.0:80",

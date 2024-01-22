@@ -43,7 +43,7 @@ func (s service) Create(userId, courseId string) (*domain.Enrollment, error) {
 		return nil, errors.New("user id doesn't exists")
 	}
 
-	if _, err := s.userSrv.Get(enroll.CourseID); err != nil {
+	if _, err := s.courseSrv.Get(enroll.CourseID); err != nil {
 		return nil, errors.New("course id doesn't exists")
 	}
 
