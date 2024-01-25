@@ -48,6 +48,9 @@ func main() {
 	router.HandleFunc("/courses/{id}", courseEnd.Delete).Methods("DELETE")
 
 	router.HandleFunc("/enrollments", enrollEnd.Create).Methods("POST")
+	router.HandleFunc("/enrollments/{id}", enrollEnd.Get).Methods("GET")
+	router.HandleFunc("/enrollments", enrollEnd.GetAll).Methods("GET")
+	router.HandleFunc("/enrollments", enrollEnd.Delete).Methods("DELETE")
 
 	/* 	corsHandler := handlers.CORS(
 		handlers.AllowedOrigins([]string{"*"}), // Puedes ajustar los orígenes permitidos según tus necesidades
@@ -57,7 +60,7 @@ func main() {
 
 	srv := &http.Server{
 		Handler:      router,
-		Addr:         "0.0.0.0:80",
+		Addr:         "127.0.0.0:8000",
 		ReadTimeout:  5 * time.Second,
 		WriteTimeout: 5 * time.Second,
 	}

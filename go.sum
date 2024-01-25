@@ -1,3 +1,5 @@
+github.com/MartinezMG10/go_domain v1.0.0 h1:sxq+ImId3b2yHhes236bhOVheJNOG+YUaKyBd5g84pQ=
+github.com/MartinezMG10/go_domain v1.0.0/go.mod h1:SMdS2032xXOhFWFEDaI8fr5x+ksnAqNO+G02rmO0XhA=
 github.com/go-sql-driver/mysql v1.7.0/go.mod h1:OXbVy3sEdcQ2Doequ6Z5BW6fXNQTmx+9S1MCJN5yJMI=
 github.com/go-sql-driver/mysql v1.7.1 h1:lUIinVbN1DY0xBg0eMOzmmtGoHwWBbvnWubQUrtU8EI=
 github.com/go-sql-driver/mysql v1.7.1/go.mod h1:OXbVy3sEdcQ2Doequ6Z5BW6fXNQTmx+9S1MCJN5yJMI=
